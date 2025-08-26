@@ -1,0 +1,129 @@
+body {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: #f7fafc;
+  margin: 0;
+  color: #2d3748;
+}
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  background: linear-gradient(90deg, #32b4e8 0%, #0e3256 100%);
+  color: #fff;
+}
+.profile-img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 0.5rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: #fff;
+  padding: 0.6rem 0;
+  margin: 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+nav a {
+  text-decoration: none;
+  color: #0e3256;
+  font-weight: bold;
+  margin: 0 1.2rem;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #32b4e8;
+}
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.2rem;
+}
+section {
+  margin-bottom: 2.2rem;
+}
+h3 {
+  margin: 1.2rem 0 0.8rem;
+  color: #0e3256;
+  border-left: 5px solid #32b4e8;
+  padding-left: 0.7rem;
+}
+ul.skill-list, ul.cert-list { 
+  columns: 2;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.skill-list li, ul.cert-list li {
+  margin-bottom: 0.7rem;
+  padding-left: 1.1rem;
+  position: relative;
+}
+ul.skill-list li::before, ul.cert-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #32b4e8;
+}
+.cert-list img {
+  width: 25px;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+}
+.job, .project {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 9px;
+  margin-bottom: 1.1rem;
+  box-shadow: 0 2px 9px rgba(32,50,86,0.08);
+}
+.job-date {
+  color: #888;
+  font-size: 0.95em;
+  float: right;
+}
+blockquote {
+  font-style: italic;
+  background: #e0f7fa;
+  border-left: 4px solid #32b4e8;
+  padding: 0.7rem 1.2rem;
+  margin: 1rem 0;
+}
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 0.7rem;
+  padding: 0.6rem;
+  border: 1px solid #d1e5f6;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+form button {
+  background: #32b4e8;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2em;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+form button:hover {
+  background: #0e3256;
+}
+footer {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 1.1rem 0 0.5rem;
+  margin-top: 2rem;
+  color: #888;
+  font-size: 0.96rem;
+}
+@media (max-width:600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  ul.skill-list, ul.cert-list {
+    columns: 1;
+  }
+}
